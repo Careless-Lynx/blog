@@ -14,7 +14,7 @@
 <meta property="og:description" content="前言这篇文章是给我自己看的，没有图，也比较简略，我自己能看得懂就行。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-01T09:02:07.000Z">
-<meta property="article:modified_time" content="2024-10-01T09:52:24.283Z">
+<meta property="article:modified_time" content="2024-10-01T09:59:25.681Z">
 <meta property="article:author" content="vps901">
 <meta property="article:tag" content="自用,技术,教程">
 <meta name="twitter:card" content="summary">
@@ -120,7 +120,7 @@
 
 <pre><code>访问 https://github.com/settings/keys ，选New SSH Key，title随便写，把输出的内容丢到Key里面，点击Save
 
-回来 ``ssh -T git@github.com`` ，如果提示下面的内容就是成功了：
+回来 `ssh -T git@github.com` ，如果提示下面的内容就是成功了：
 </code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi vps901! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
 
@@ -130,7 +130,7 @@
 </code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm i --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
-<pre><code>接下来 ``vim _config.yml``，修改一下内容。
+<pre><code>接下来 `vim _config.yml`，修改一下内容。
 
 接着最后的Deploy要改成像这样的：
 </code></pre>
@@ -150,13 +150,13 @@
 </code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim source/_posts/new_post.md</span><br></pre></td></tr></table></figure>
 
-<pre><code>科普一下``vim``的用法，``vim 文件``打开文件，进入后按``i``进入编辑模式，编辑完后先按``ESC``再输入``:wq``然后回车保存文件。
+<pre><code>科普一下`vim`的用法，`vim 文件`打开文件，进入后按`i`进入编辑模式，编辑完后先按`ESC`再输入`:wq`然后回车保存文件。
 
-然后执行`` echo blog.bw11.dns-dynamic.net&gt;source/CNAME``绑定域名，域名解析到``careless-lynx.github.io``
+然后执行``echo blog.bw11.dns-dynamic.net&gt;source/CNAME`绑定域名，域名解析到`careless-lynx.github.io`
 
-最后我们执行``hexo clean &amp;&amp; hexo d``完成上传
+最后我们执行`hexo clean &amp;&amp; hexo d`完成上传
 
-接着访问 https://github.com/Careless-Lynx/blog/settings/pages ，把文件夹图标的``none``改成``main``分支，接着点击save，过几分钟访问 https://blog.bw11.dns-dynamic.net 即可
+接着访问 https://github.com/Careless-Lynx/blog/settings/pages ，把文件夹图标的`none`改成`main`分支，接着点击save，过几分钟访问 https://blog.bw11.dns-dynamic.net 即可
 </code></pre>
 <h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><pre><code>这篇文章只是给我自己看的，所以不要那么关注细节。我的SSH软件是JuiceSSH，仓库这类东西都是可以自己变动的。Github已经在2021年关闭了http方式上传代码，但是好多教程还是在repository上面写着http方式连接仓库。还有更多的我就没讲了，我这里的域名，仓库只要你理解能力够强，换成自己的一样能部署成功，这里只是汇总一下我踩的坑而已。
 </code></pre>
@@ -164,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.bw11.dns-dynamic.net/2024/10/01/use-github-hexo-create-blog/" data-id="cm1q9fiy00000k7t0cjwu2iqn" data-title="使用Github Pages和Hexo博客程序零成本搭建一个个人博客（自用篇）" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://blog.bw11.dns-dynamic.net/2024/10/01/use-github-hexo-create-blog/" data-id="cm1q9oi6m0000zqt09iql7q2j" data-title="使用Github Pages和Hexo博客程序零成本搭建一个个人博客（自用篇）" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
